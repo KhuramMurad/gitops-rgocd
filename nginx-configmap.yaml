@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Welcome to Custom Nginx!</title>
+    </head>
+    <body>
+        <h1>Welcome to My Custom Nginx Page</h1>
+        <p>This page was updated via GitOps!</p>
+    </body>
+    </html>
+
